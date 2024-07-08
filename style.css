@@ -1,0 +1,64 @@
+body{
+    display:flex;
+    align-items :center;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");  
+    font-family: "Montserrat" ,sans-serif;  
+    background-size: cover;
+    margin: 0;
+    overflow:hidden ! important;
+    color: white ! important;
+}
+
+.form input{
+    margin-bottom: 14px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgb(236, 62, 117);
+    color: white;
+}
+
+
+
+.form button:hover{
+    background-color:rgb(139, 20, 44);
+}
+
+.center-text{
+    text-align: center;
+    margin-top: 10px;
+}
+
+a{
+    color: white !important;
+    text-decoration: none;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.09);
+    max-width: 400px !important;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.50);
+}
+
+#particles-js{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+

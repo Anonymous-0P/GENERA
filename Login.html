@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="google.js" defer type="module"></script>
+    <script src="login.js" defer type="module"></script>
+    <script src="particles.min.js" defer></script>
+    <script src="app.js" defer></script>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h2 class="text-center mb-4">
+            <i class="fas fa-user-plus"></i> Login
+        </h2>
+
+        <form action="#" class="form">
+            <div class="mb-3">
+                <label for="username">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter Your Email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter Your Password" required>
+            </div>
+
+            <button type="submit" id="signUp" class="btn btn-primary">
+                <i class="fas fa-check"></i> Login
+            </button>
+           
+            <div class="social-buttons mt-3">
+                <button id="google-login-btn" class="btn btn-danger">
+                    <i class="fab fa-google"></i> Login with Google
+                </button>
+            </div>
+        </form>
+        
+        <p class="center-text mt-3">
+            <a href="signin.html">Create New Account | Sign in Here</a>
+        </p>
+    </div>
+</body>
+
+</html>
