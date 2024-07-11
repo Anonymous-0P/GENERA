@@ -1,0 +1,126 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #001632;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(234, 104, 104); /* Changed color to white */
+    background: none; /* Removed gradient background */
+    overflow: hidden;
+    padding: 30px 70px;
+    font-size: 140px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 20px 50px rgb(255 255 255 / 5%);
+    text-shadow: 2px 2px 4px #3a1010;
+    background-color: black; /* Added solid background */
+    z-index: 1; /* Ensure it is above the background */
+}
+
+a:before {
+    position: absolute;
+    width: 100%; /* Adjusted to cover the entire text */
+    height: 100%; /* Adjusted to cover the entire text */
+    top: 0;
+    left: 0;
+    content: '';
+    background: black; /* Changed to solid black */
+    z-index: -1; /* Ensures it is behind the text */
+}
+
+a span:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #002b9d, #34ffea);
+    animation: animate1 2s linear infinite;
+    z-index: 0; /* Ensure it is behind the text */
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+a span:nth-child(2) {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom, #002b9d, #34ffea);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+    z-index: 0; /* Ensure it is behind the text */
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+a span:nth-child(3) {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to left, #002b9d, #34ffea);
+    animation: animate3 2s linear infinite;
+    z-index: 0; /* Ensure it is behind the text */
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+a span:nth-child(4) {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #002b9d, #34ffea);
+    animation: animate4 3s linear infinite;
+    animation-delay: 1s;
+    z-index: 0; /* Ensure it is behind the text */
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
